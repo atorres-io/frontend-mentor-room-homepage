@@ -1,0 +1,8 @@
+@import url('https://fonts.google.com/specimen/Spartan');
+
+@import 'global.css';
+@import 'general.css';
+@import 'components.css';
+@import 'objects.css';
+@import 'utilities.css';
+@import 'media.css';

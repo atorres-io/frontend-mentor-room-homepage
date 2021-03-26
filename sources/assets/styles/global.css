@@ -1,0 +1,15 @@
+*,
+*:before,
+*::after {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--dark-gray: hsl(0, 0%, 63%);
+	--black: hsl(0, 0%, 0%);
+	--white: hsl(0, 0%, 100%);
+	--dark-gray-hard: hsl(0, 0%, 27%);
+}

@@ -1,0 +1,8 @@
+{
+	"name": "frontend-mentor-room-homepage",
+	"version": "1.0.0",
+	"private": false,
+	"description": "Room homepage of Frontend Mentor Challenge",
+	"main": "app.js",
+	"author": "Alejandro Torres"
+}
