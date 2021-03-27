@@ -1,0 +1,41 @@
+@media only screen and (max-width: 500px) {
+	.wrapper__shop {
+		padding: 3rem 2rem;
+	}
+
+	.wrapper__about {
+		padding: 3rem 2rem;
+	}
+}
+
+@media only screen and (max-width: 775px) {
+	main {
+		grid-template-columns: 100%;
+		grid-template-rows: auto;
+		grid-template-areas: 'slider' 'shop' 'image01' 'about' 'image02';
+	}
+
+	h1 {
+		font-size: 24px;
+		line-height: 2rem;
+		margin-bottom: 1rem;
+	}
+
+	.wrapper__shop {
+		display: block;
+		padding: 4rem 3rem;
+	}
+
+	.wrapper__about {
+		display: block;
+		padding: 4rem 3rem;
+	}
+
+	.wrapper__image01 {
+		height: 220px;
+	}
+
+	.wrapper__image02 {
+		height: 220px;
+	}
+}

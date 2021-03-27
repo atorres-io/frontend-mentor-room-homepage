@@ -1,0 +1,43 @@
+.wrapper__slider {
+	position: relative;
+	grid-area: slider;
+	justify-items: stretch;
+	align-items: stretch;
+}
+
+.wrapper__shop {
+	position: relative;
+	grid-area: shop;
+	justify-items: stretch;
+	align-items: stretch;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	padding: 0 6.5vw;
+}
+
+.wrapper__image01 {
+	grid-area: image01;
+	justify-items: stretch;
+	align-items: stretch;
+	background: url(../images/image-about-dark.jpg) no-repeat center center /
+		cover;
+}
+
+.wrapper__about {
+	grid-area: about;
+	justify-items: stretch;
+	align-items: stretch;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	padding: 0 4vw;
+}
+
+.wrapper__image02 {
+	grid-area: image02;
+	justify-items: stretch;
+	align-items: stretch;
+	background: url(../images/image-about-light.jpg) no-repeat center center /
+		cover;
+}
