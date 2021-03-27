@@ -26,6 +26,7 @@
 		top: calc(350px - var(--size));
 		width: var(--size);
 		height: var(--size);
+		padding-bottom: 0;
 	}
 
 	button.behind {

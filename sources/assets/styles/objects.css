@@ -9,6 +9,10 @@ button {
 	padding-bottom: calc(var(--section-size) / 2); /* aspect-ratio 1:1 */
 	border: none;
 	background-color: var(--black);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 20%;
+	cursor: pointer;
 	transition: background-color 250ms ease;
 }
 
@@ -20,6 +24,7 @@ button.behind {
 	--section-size: calc(100% / 7);
 
 	left: calc(var(--section-size) * 4);
+	background-image: url(../images/icon-angle-left.svg);
 }
 
 button.infront {
@@ -27,4 +32,5 @@ button.infront {
 	--button-size: calc(calc(100% / 7) / 2);
 
 	left: calc(var(--left) + var(--button-size));
+	background-image: url(../images/icon-angle-right.svg);
 }
