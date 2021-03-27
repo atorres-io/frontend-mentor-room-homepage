@@ -1,0 +1,30 @@
+button {
+	--section-size: calc(100% / 7);
+
+	position: absolute;
+	bottom: 35%;
+	appearance: none;
+	width: calc(var(--section-size) / 2);
+	height: 0;
+	padding-bottom: calc(var(--section-size) / 2); /* aspect-ratio 1:1 */
+	border: none;
+	background-color: var(--black);
+	transition: background-color 250ms ease;
+}
+
+button:hover {
+	background-color: var(--dark-gray-hard);
+}
+
+button.behind {
+	--section-size: calc(100% / 7);
+
+	left: calc(var(--section-size) * 4);
+}
+
+button.infront {
+	--left: calc(var(--section-size) * 4);
+	--button-size: calc(calc(100% / 7) / 2);
+
+	left: calc(var(--left) + var(--button-size));
+}

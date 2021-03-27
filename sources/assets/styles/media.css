@@ -8,11 +8,10 @@
 	}
 }
 
-@media only screen and (max-width: 775px) {
+@media only screen and (max-width: 760px) {
+	/* 880 */
 	main {
-		grid-template-columns: 100%;
-		grid-template-rows: auto;
-		grid-template-areas: 'slider' 'shop' 'image01' 'about' 'image02';
+		display: block;
 	}
 
 	h1 {
@@ -21,21 +20,71 @@
 		margin-bottom: 1rem;
 	}
 
+	button {
+		--size: 60px;
+
+		top: calc(350px - var(--size));
+		width: var(--size);
+		height: var(--size);
+	}
+
+	button.behind {
+		--size: 60px;
+
+		left: auto;
+		right: var(--size);
+	}
+
+	button.infront {
+		left: auto;
+		right: 0;
+	}
+
+	.wrapper__slider {
+		height: 350px;
+	}
+
+	.wrapper__slider figure:nth-child(1) {
+		background: url(../images/mobile-image-hero-1.jpg) no-repeat center center /
+			cover;
+	}
+
+	.wrapper__slider figure:nth-child(2) {
+		background: url(../images/mobile-image-hero-2.jpg) no-repeat center center /
+			cover;
+	}
+
+	.wrapper__slider figure:nth-child(3) {
+		background: url(../images/mobile-image-hero-3.jpg) no-repeat center center /
+			cover;
+	}
+
 	.wrapper__shop {
-		display: block;
-		padding: 4rem 3rem;
+		height: 350px;
+	}
+
+	.wrapper__shop article {
+		padding: 4rem 2rem;
 	}
 
 	.wrapper__about {
-		display: block;
-		padding: 4rem 3rem;
+		padding: 4rem 2rem;
 	}
 
 	.wrapper__image01 {
-		height: 220px;
+		height: 0;
+		padding-top: 56.25%; /* aspect-ratio 16:9 */
 	}
 
 	.wrapper__image02 {
-		height: 220px;
+		height: 0;
+		padding-top: 56.25%; /* aspect-ratio 16:9 */
+	}
+}
+
+@media only screen and (min-width: 1620px) {
+	button {
+		height: 7rem;
+		padding-bottom: 0;
 	}
 }
