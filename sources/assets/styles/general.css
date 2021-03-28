@@ -60,3 +60,26 @@ p {
 	color: var(--dark-gray);
 	font-family: 'Spartan', sans-serif;
 }
+
+a {
+	text-decoration: none;
+	font-weight: 500; /* 500, 600, 700 */
+	font-size: 12px;
+	line-height: 4rem;
+	letter-spacing: 0.4rem;
+	text-transform: uppercase;
+	font-family: 'Spartan', sans-serif;
+	color: var(--black);
+	transition: color 250ms ease, letter-spacing 250ms ease;
+}
+
+a::after {
+	margin-left: 2rem;
+	content: url(../images/icon-arrow.svg);
+	fill: var(--black);
+}
+
+a:hover {
+	letter-spacing: 0.6rem;
+	color: var(--dark-gray);
+}

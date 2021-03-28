@@ -11,8 +11,7 @@
 	left: 0;
 	width: 100%;
 	height: 100%;
-	transition: opacity 500ms ease;
-	background-color: red;
+	transition: opacity 600ms ease, transform 600ms ease;
 }
 
 .wrapper__slider figure:nth-child(1) {
@@ -47,6 +46,7 @@
 	width: 100%;
 	height: 100%;
 	padding: 0 6.5vw;
+	transition: opacity 600ms ease, transform 600ms ease;
 }
 
 .wrapper__image01 {
