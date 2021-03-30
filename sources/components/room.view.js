@@ -18,6 +18,7 @@ class RoomView {
 				document.getElementById('article03'),
 			],
 			DROPDOWN: document.getElementById('dropdown'),
+			DECORATION: document.getElementById('decoration'),
 		};
 		this.STATE = 0;
 		this.MAX_SLIDER = 3 - 1; // -1 to be compatible with arrays
@@ -33,6 +34,18 @@ class RoomView {
 		);
 		this.GUI.BUTTONS.HAMBURGER.addEventListener('click', this._openDropdown);
 		this.GUI.BUTTONS.CLOSE.addEventListener('click', this._closeDropdown);
+	};
+
+	_openDropdown = () => {
+		document.body.style.overflowY = 'hidden';
+		this.GUI.DECORATION.style.opacity = 1;
+		this.GUI.DROPDOWN.classList.remove('dropdown--hidden');
+	};
+
+	_closeDropdown = () => {
+		document.body.style.overflowY = 'auto';
+		this.GUI.DECORATION.style.opacity = 0;
+		this.GUI.DROPDOWN.classList.add('dropdown--hidden');
 	};
 
 	_sliderAction = (e, action) => {
@@ -53,6 +66,4 @@ class RoomView {
 		this.STATE === this.MAX_SLIDER ? (this.STATE = 0) : ++this.STATE;
 	_previous = () =>
 		this.STATE === this.MIN_SLIDER ? (this.STATE = 2) : --this.STATE;
-	_openDropdown = () => this.GUI.DROPDOWN.classList.remove('dropdown--hidden');
-	_closeDropdown = () => this.GUI.DROPDOWN.classList.add('dropdown--hidden');
 }
