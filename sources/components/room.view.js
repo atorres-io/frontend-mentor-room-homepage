@@ -34,6 +34,12 @@ class RoomView {
 		);
 		this.GUI.BUTTONS.HAMBURGER.addEventListener('click', this._openDropdown);
 		this.GUI.BUTTONS.CLOSE.addEventListener('click', this._closeDropdown);
+		document.addEventListener('keydown', this._keyboardControl);
+	};
+
+	_keyboardControl = e => {
+		if (e.code === 'ArrowRight') this._sliderAction(e, 'next');
+		if (e.code === 'ArrowLeft') this._sliderAction(e, 'previous');
 	};
 
 	_openDropdown = () => {
