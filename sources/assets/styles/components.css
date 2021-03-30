@@ -49,6 +49,30 @@
 	transition: opacity 600ms ease, transform 600ms ease;
 }
 
+.wrapper__shop a {
+	text-decoration: none;
+	font-weight: 500; /* 500, 600, 700 */
+	font-size: 12px;
+	line-height: 4rem;
+	letter-spacing: 0.4rem;
+	text-transform: uppercase;
+	font-family: 'Spartan', sans-serif;
+	color: var(--black);
+	user-select: none;
+	transition: color 250ms ease, letter-spacing 250ms ease;
+}
+
+.wrapper__shop a::after {
+	margin-left: 2rem;
+	content: url(../images/icon-arrow.svg);
+	fill: var(--black);
+}
+
+.wrapper__shop a:hover {
+	letter-spacing: 0.6rem;
+	color: var(--dark-gray);
+}
+
 .wrapper__image01 {
 	grid-area: image01;
 	justify-items: stretch;

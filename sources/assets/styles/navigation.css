@@ -1,0 +1,142 @@
+/* Desktop */
+
+.nav__desktop {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	width: auto;
+	height: auto;
+	padding: 3rem 2.5rem;
+	background-color: transparent;
+}
+
+.nav__desktop figure {
+	margin-right: 2rem;
+	user-select: none;
+}
+
+.nav__desktop figure img {
+	width: auto;
+	height: 1rem;
+	object-fit: contain;
+	object-position: center center;
+}
+
+.nav__desktop ul {
+	display: flex;
+	flex-flow: row nowrap;
+	list-style: none;
+}
+
+.nav__desktop ul li {
+	margin: 0 1rem;
+}
+
+.nav__desktop ul li a {
+	position: relative;
+	color: var(--white);
+	font-weight: 500; /* 500, 600, 700 */
+	text-decoration: none;
+	text-transform: lowercase;
+	font-size: 12px;
+	user-select: none;
+	font-family: 'Spartan', sans-serif;
+}
+
+.nav__desktop ul li a::after {
+	--size: 1.2rem;
+
+	position: absolute;
+	content: '';
+	bottom: -0.6rem;
+	left: calc(50% - calc(var(--size) / 2));
+	width: var(--size);
+	height: 0.1rem;
+	transform: scaleX(0);
+	background-color: var(--white);
+	transition: transform 250ms ease;
+}
+
+.nav__desktop ul li a:hover::after {
+	transform: scaleX(1);
+}
+
+/* Mobile */
+
+.nav__mobile {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+	flex-flow: row nowrap;
+	align-items: center;
+	width: 100%;
+	height: auto;
+	padding: 3rem 2.5rem;
+	background-color: transparent;
+}
+
+.nav__mobile .logotype {
+	flex-grow: 1;
+	text-align: center;
+	user-select: none;
+}
+
+.nav__mobile .logotype img {
+	width: auto;
+	height: 1rem;
+	object-fit: contain;
+	object-position: center center;
+}
+
+.nav__mobile .hamburger {
+	width: auto;
+	height: 1rem;
+	object-fit: contain;
+	object-position: center center;
+	cursor: pointer;
+}
+
+.dropdown {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	width: 100%;
+	height: auto;
+	padding: 3rem 2.5rem;
+	background-color: var(--white);
+	z-index: 10;
+	transition: left 250ms ease, opacity 250ms ease;
+}
+
+.dropdown ul {
+	display: flex;
+	flex-flow: row nowrap;
+	list-style: none;
+}
+
+.dropdown ul li {
+	margin: 0 0.8rem;
+}
+
+.dropdown ul li a {
+	color: var(--black);
+	font-weight: 600; /* 500, 600, 700 */
+	text-decoration: none;
+	text-transform: lowercase;
+	font-size: 12px;
+	user-select: none;
+	font-family: 'Spartan', sans-serif;
+}
+
+.dropdown .close {
+	margin-right: 2rem;
+	user-select: none;
+	cursor: pointer;
+}
