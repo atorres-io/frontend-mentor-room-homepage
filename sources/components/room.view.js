@@ -4,6 +4,8 @@ class RoomView {
 			BUTTONS: {
 				BEHIND: document.getElementById('behindButton'),
 				INFRONT: document.getElementById('infrontButton'),
+				HAMBURGER: document.getElementById('hamburger'),
+				CLOSE: document.getElementById('close'),
 			},
 			SLIDERS: [
 				document.getElementById('slider01'),
@@ -15,8 +17,11 @@ class RoomView {
 				document.getElementById('article02'),
 				document.getElementById('article03'),
 			],
+			DROPDOWN: document.getElementById('dropdown'),
 		};
 		this.STATE = 0;
+		this.MAX_SLIDER = 3 - 1; // -1 to be compatible with arrays
+		this.MIN_SLIDER = 1 - 1; // -1 to be compatible with arrays
 	}
 
 	initListeners = () => {
@@ -26,6 +31,8 @@ class RoomView {
 		this.GUI.BUTTONS.INFRONT.addEventListener('click', e =>
 			this._sliderAction(e, 'previous')
 		);
+		this.GUI.BUTTONS.HAMBURGER.addEventListener('click', this._openDropdown);
+		this.GUI.BUTTONS.CLOSE.addEventListener('click', this._closeDropdown);
 	};
 
 	_sliderAction = (e, action) => {
@@ -42,6 +49,10 @@ class RoomView {
 		this.GUI.ARTICLES[this.STATE].classList.remove('hidden');
 	};
 
-	_next = () => (this.STATE === 2 ? (this.STATE = 0) : ++this.STATE);
-	_previous = () => (this.STATE === 0 ? (this.STATE = 2) : --this.STATE);
+	_next = () =>
+		this.STATE === this.MAX_SLIDER ? (this.STATE = 0) : ++this.STATE;
+	_previous = () =>
+		this.STATE === this.MIN_SLIDER ? (this.STATE = 2) : --this.STATE;
+	_openDropdown = () => this.GUI.DROPDOWN.classList.remove('dropdown--hidden');
+	_closeDropdown = () => this.GUI.DROPDOWN.classList.add('dropdown--hidden');
 }
