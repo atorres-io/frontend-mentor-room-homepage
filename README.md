@@ -26,13 +26,14 @@ Users should be able to:
 
 ### Screenshot
 
-<img src='sources/assets/images/final.app/design-desktop.png' width='600px' />
-<img src='sources/assets/images/final.app/design-mobile.png' width='250px' />
+<img src='sources/assets/images/final.app/design-desktop.png' width='640px' />
+<img src='sources/assets/images/final.app/design-mobile.png' width='220px' />
+<img src='sources/assets/images/final.app/design-mobile-dropdown.png' width='280px' />
 
 ### Links
 
-- Solution URL: [Github URL here]()
-- Live Site URL: [Live Site URL here]()
+- Solution URL: [Github URL here](https://github.com/atorres-io/frontend-mentor-room-homepage)
+- Live Site URL: [Live Site URL here](https://nifty-swartz-7b904b.netlify.app/)
 
 ## My process
 
@@ -40,15 +41,20 @@ Users should be able to:
 
 - Semantic HTML5 markup
 - CSS custom properties
+- Vanilla JavaScript (ES6)
 - CSS animations
 - Flexbox
-- Mobile-first workflow
+- Grid Layout
 - BEM methodology
 - ITCSS architecture
 
 ### What I learned
 
+Using the "calc()" css property to the next level, with percentage calculations to keep responsive correct at all times.
+
 ### Useful resources
+
+[Complete Guide Grid | CSS-TRICKS](https://css-tricks.com/snippets/css/complete-guide-grid/)
 
 ## Author
 
