@@ -2,22 +2,21 @@
 
 <html lang='en' xmlns='http://www.w3.org/1999/xhtml'>
 	<head>
-		<meta charset='UTF-8' />
-		<meta
-			name='viewport'
-			content='width=device-width, initial-scale=1, user-scalable=no'
-		/>
-		<meta http-equiv='X-UA-Compatible' content='ie=edge' />
-		<title>Room Homepage</title>
-		<link rel='apple-touch-icon' href='favicon-32x32.png' />
-		<link rel='icon' type='image/png' sizes='32x32' href='favicon-32x32.png' />
-		<link rel='stylesheet' href='assets/styles/import.css' />
+		<meta charset='UTF-8'>
+		<meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=no'>
+		<meta http-equiv='X-UA-Compatible' content='ie=edge'>
+		<meta name='description' content='Room homepage of Frontend Mentor Challenge'>
+		<meta name='autor' content='Alejandro Torres'>
+
+		<title>Frontend Mentor | Room Homepage</title>
+
+		<link rel='apple-touch-icon' href='favicon-32x32.png'>
+		<link rel='icon' type='image/png' sizes='32x32' href='favicon-32x32.png'>
+		<link rel='stylesheet' href='assets/styles/import.css'>
 	</head>
 
 	<body>
 		<noscript>You need to enable JavaScript to run this app.</noscript>
-
-		<header></header>
 		
 		<main>
 			<section class='wrapper__slider'>
@@ -59,10 +58,36 @@
 					inspires you. Find the furniture pieces you need, from traditional to contemporary styles
 					or anything in between. Product specialists are available to help you create your dream space.
 				</p>
-				<a href='#'>shop now</a>
 			</section>
 			<section class='wrapper__image02'></section>
 		</main>
+
+		<header>
+			<!-- Nav desktop version -->
+			<nav class='nav__desktop'>
+				<figure><img src='assets/images/logo.svg' alt='Logotype' /></figure>
+				<ul>
+					<li><a href='#'>Home</a></li>
+					<li><a href='#'>Shop</a></li>
+					<li><a href='#'>About</a></li>
+					<li><a href='#'>Contact</a></li>
+				</ul>
+			</nav>
+			<!-- Mobile version -->
+			<nav class='nav__mobile'>
+				<img id='hamburger' class='hamburger' src='assets/images/icon-hamburger.svg' alt='Hamburger' />
+				<figure class='logotype'><img src='assets/images/logo.svg' alt='Logotype' /></figure>
+			</nav>
+			<hgroup id='dropdown' class='dropdown dropdown--hidden'>
+				<img id='close' class='close' src='assets/images/icon-close.svg' alt='Close Navigation' />
+				<ul>
+					<li><a href='#'>Home</a></li>
+					<li><a href='#'>Shop</a></li>
+					<li><a href='#'>About</a></li>
+					<li><a href='#'>Contact</a></li>
+				</ul>
+			</hgroup>
+		</header>
 		
 		<button id='behindButton' class='behind'></button>
 		<button id='infrontButton' class='infront'></button>
